@@ -62,5 +62,5 @@ curves), which rungs 3 and 5 cannot see by design.
   `CARGO_TARGET_DIR=target/clippy RUSTC=$(rustup which --toolchain stable rustc) rustup run stable cargo clippy --release --all-targets -- -D warnings`
   and the same with `CARGO_TARGET_DIR=target/wasm ... cargo build --release --lib --target wasm32-unknown-unknown`.
   The default toolchain is an old nightly without the wasm target.
-- `scripts/fetch_sn76489python.sh` clones the private reference over HTTPS by
+- `scripts/fetch_sn76489python.sh` clones the reference over HTTPS by
   default. `SN76489_PYTHON_SOURCE=/data/emu/sn76489-python` clones the local one.

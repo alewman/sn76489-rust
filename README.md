@@ -77,7 +77,8 @@ That is why rung 1 compares `take_samples()` as well as the tables.
 CI (`.github/workflows/ci.yml`) runs `cargo fmt --check`, `cargo clippy -D
 warnings` and `cargo test` on main and pull requests. `cargo test` replays the ten
 example manifests against copies of the reference traces, without Python. Rungs 1-5
-need the reference checked out, which is a private repository, so they run locally.
+need the reference checked out (`scripts/fetch_sn76489python.sh`), and rung 4 the
+ROM-derived board streams, so they run locally.
 
 ### Reproducing
 
